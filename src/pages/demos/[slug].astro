@@ -1,13 +1,20 @@
 ---
 import demos from "../../data/demos.json";
 
+export function getStaticPaths() {
+  return demos.map((demo) => ({
+    params: { slug: demo.slug }
+  }));
+}
+
 const { slug } = Astro.params;
 const demo = demos.find((d) => d.slug === slug);
 
 if (!demo) {
-  return new Response("Not found", { status: 404 });
+  throw new Error(`Demo not found: ${slug}`);
 }
 ---
+
 
 <html lang="en">
   <head>
