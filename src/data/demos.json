@@ -8,5 +8,35 @@
     "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
     "demoUrl": "https://media.jiteshgosar.com",
     "runAction": "manual"
-  }
+  },
+  {
+    "name": "Demo Control Panel",
+    "slug": "control-panel",
+    "tagline": "Central UI to manage and launch demos.",
+    "thumbnail": "/images/control.png",
+    "description": "A lightweight dashboard concept to start, stop, and monitor demo services on demand. This demo focuses on system orchestration and access control.",
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "demoUrl": "https://control.jiteshgosar.com",
+    "runAction": "manual"
+  },
+  {
+    "name": "Document Q&A (RAG)",
+    "slug": "doc-qa-rag",
+    "tagline": "Ask questions over uploaded documents with citations.",
+    "thumbnail": "/images/rag.png",
+    "description": "A retrieval-augmented generation demo: documents are indexed, relevant chunks are retrieved, and answers are generated with citations. Designed for fast prototyping and controlled evaluation.",
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "demoUrl": "https://rag.jiteshgosar.com",
+    "runAction": "manual"
+  },
+  {
+    "name": "Route & Schedule Optimizer (OR-Tools)",
+    "slug": "ortools-optimizer",
+    "tagline": "Constraint-solving for routing, scheduling, and assignments.",
+    "thumbnail": "/images/ortools.png",
+    "description": "A practical operations research demo using Google OR-Tools: solve vehicle routing, job scheduling, and assignment problems with constraints and objective trade-offs.",
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "demoUrl": "https://opt.jiteshgosar.com",
+    "runAction": "manual"
+  } 
 ]
