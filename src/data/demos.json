@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Jellyfin Media Server",
+    "slug": "jellyfin",
+    "tagline": "Personal streaming over HTTPS via Cloudflare Tunnel.",
+    "thumbnail": "/images/jellyfin.png",
+    "description": "A self-hosted media server running on my laptop. Accessible anywhere with Cloudflare Tunnel. Includes user accounts, libraries, and streaming.",
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "demoUrl": "https://media.jiteshgosar.com",
+    "runAction": "manual"
+  }
+]
