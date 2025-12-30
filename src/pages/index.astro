@@ -1,40 +1,44 @@
 ---
 import demos from "../data/demos.json";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Demo Showroom</title>
-    <style>
-      body { font-family: system-ui, sans-serif; margin: 0; padding: 24px; background: #0b0b0c; color: #f5f5f7; }
-      h1 { margin: 0 0 16px; font-size: 28px; }
-      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
-      a.card { text-decoration: none; color: inherit; background: #141416; border: 1px solid #232327; border-radius: 16px; overflow: hidden; display: block; }
-      .thumb { width: 100%; height: 140px; background: #1d1d20; display:flex; align-items:center; justify-content:center; }
-      .thumb img { width: 100%; height: 100%; object-fit: cover; display:block; }
-      .content { padding: 14px; }
-      .name { font-weight: 650; margin-bottom: 6px; }
-      .tag { color: #c9c9d1; font-size: 14px; line-height: 1.3; }
-      .badge { display:inline-block; margin-top: 10px; padding: 4px 10px; border-radius: 999px; background:#232327; font-size:12px; color:#c9c9d1; }
-    </style>
-  </head>
-  <body>
-    <h1>Demo Showroom</h1>
-    <div class="grid">
-      {demos.map((d) => (
-        <a class="card" href={`/demos/${d.slug}`}>
-          <div class="thumb">
-            <img src={d.thumbnail} alt={`${d.name} thumbnail`} loading="lazy" />
-          </div>
-          <div class="content">
-            <div class="name">{d.name}</div>
-            <div class="tag">{d.tagline}</div>
-            <div class="badge">View details</div>
-          </div>
-        </a>
-      ))}
-    </div>
-  </body>
-</html>
+<BaseLayout title="Demos">
+
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Demo Showroom</title>
+      <style>
+        body { font-family: system-ui, sans-serif; margin: 0; padding: 24px; background: #0b0b0c; color: #f5f5f7; }
+        h1 { margin: 0 0 16px; font-size: 28px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+        a.card { text-decoration: none; color: inherit; background: #141416; border: 1px solid #232327; border-radius: 16px; overflow: hidden; display: block; }
+        .thumb { width: 100%; height: 140px; background: #1d1d20; display:flex; align-items:center; justify-content:center; }
+        .thumb img { width: 100%; height: 100%; object-fit: cover; display:block; }
+        .content { padding: 14px; }
+        .name { font-weight: 650; margin-bottom: 6px; }
+        .tag { color: #c9c9d1; font-size: 14px; line-height: 1.3; }
+        .badge { display:inline-block; margin-top: 10px; padding: 4px 10px; border-radius: 999px; background:#232327; font-size:12px; color:#c9c9d1; }
+      </style>
+    </head>
+    <body>
+      <h1>Demo Showroom</h1>
+      <div class="grid">
+        {demos.map((d) => (
+          <a class="card" href={`/demos/${d.slug}`}>
+            <div class="thumb">
+              <img src={d.thumbnail} alt={`${d.name} thumbnail`} loading="lazy" />
+            </div>
+            <div class="content">
+              <div class="name">{d.name}</div>
+              <div class="tag">{d.tagline}</div>
+              <div class="badge">View details</div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </body>
+  </html>
+</BaseLayout>

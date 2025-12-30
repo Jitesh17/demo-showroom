@@ -1,10 +1,26 @@
 ---
+import "../styles/global.css";
 import GlobalNav from "../components/GlobalNav.astro";
----
 
-<html>
-  <body>
+const {
+  title = "Demos",
+  description = "Interactive demos by Jitesh Gosar",
+} = Astro.props;
+
+const fullTitle = title ? `${title} | Demos` : "Demos";
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body class="min-h-screen bg-white text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100">
     <GlobalNav />
-    <slot />
+    <main>
+      <slot />
+    </main>
   </body>
 </html>
