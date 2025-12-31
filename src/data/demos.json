@@ -5,7 +5,7 @@
     "tagline": "Personal streaming over HTTPS via Cloudflare Tunnel.",
     "thumbnail": "/images/jellyfin.png",
     "description": "A self-hosted media server running on my laptop. Accessible anywhere with Cloudflare Tunnel. Includes user accounts, libraries, and streaming.",
-    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "videoUrl": "https://www.youtube.com/embed/e5VVZziprl8",
     "demoUrl": "https://media.jiteshgosar.com",
     "runAction": "manual"
   },
@@ -15,7 +15,7 @@
     "tagline": "Central UI to manage and launch demos.",
     "thumbnail": "/images/control.png",
     "description": "A lightweight dashboard concept to start, stop, and monitor demo services on demand. This demo focuses on system orchestration and access control.",
-    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "videoUrl": "https://www.youtube.com/embed/e5VVZziprl8",
     "demoUrl": "https://control.jiteshgosar.com",
     "runAction": "manual"
   },
@@ -25,7 +25,7 @@
     "tagline": "Ask questions over uploaded documents with citations.",
     "thumbnail": "/images/rag.png",
     "description": "A retrieval-augmented generation demo: documents are indexed, relevant chunks are retrieved, and answers are generated with citations. Designed for fast prototyping and controlled evaluation.",
-    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "videoUrl": "https://www.youtube.com/embed/e5VVZziprl8",
     "demoUrl": "https://rag.jiteshgosar.com",
     "runAction": "manual"
   },
@@ -35,8 +35,8 @@
     "tagline": "Constraint-solving for routing, scheduling, and assignments.",
     "thumbnail": "/images/ortools.png",
     "description": "A practical operations research demo using Google OR-Tools: solve vehicle routing, job scheduling, and assignment problems with constraints and objective trade-offs.",
-    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "demoUrl": "https://opt.jiteshgosar.com",
+    "videoUrl": "https://www.youtube.com/embed/e5VVZziprl8",
+    "demoUrl": "https://ort.jiteshgosar.com",
     "runAction": "manual"
   } 
 ]
